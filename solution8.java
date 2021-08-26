@@ -1,3 +1,11 @@
+//ALGORITHM
+//1)take the inputs
+//2)validate the inputs
+//3)call the calc function
+//4)if n is even both a,b get multiplied by (n*2)/2 effectively n
+//5)if n is odd b gets 1 less play,thus divide b by 2
+//6)find max divide by min and return
+
 import java.util.*;
 import java.io.*;
 
@@ -31,7 +39,6 @@ class Solution8 {
 	    if(a%2!=0)
 	    finalB/=2;
 	    
-	   // System.out.println("a>"+finalA+"b>"+finalB);
 	    if(finalA>finalB)
 	    return finalA/finalB;
 	    
