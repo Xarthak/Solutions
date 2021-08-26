@@ -9,9 +9,9 @@
 import java.util.*;
 import java.io.*;
 
-class Solution1 {
+class Solution2 {
 	public static void main (String[] args) {
-		System.out.println("Hello");
+		
 		Scanner sc=new Scanner(System.in);
 		int s1[]=new int[3];
 		int s2[]=new int[3];
