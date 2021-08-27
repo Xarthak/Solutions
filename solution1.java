@@ -1,10 +1,24 @@
+//ALGORITHM
+//1)take the inputs
+//2)validate the inputs
+//3)we create a frequency array to store the frequency of arrival of every Character
+//4)create an HashSet to store and to avoid duplicate values
+//5)add value in a set and subsequently increase its frequency
+//6)sort the frequency array
+//7)check for all i>2 freq[i]=freq[i-1]+freq[i-2]
+
 import java.util.*;
-class TestClass
-{
+import java.util.*;
+class Solution1{
 	public static void main(String args[]) throws Exception
 	{
 		Scanner scan=new Scanner(System.in);
 		int t=scan.nextInt();
+		if(t<1 || t>10){
+		    System.out.println("Invalid Input");
+		    return ;
+		}
+		
 		for(int test=0;test<t;test++)
 		{
 			String s=scan.next();
@@ -23,13 +37,10 @@ class TestClass
 			}
 			Arrays.sort(freq);
 			int flag=0;
-			for(int i=26-set.size()+2,j=0;i<26;i++,j++)
+			
+			for(int i=26-set.size()+2;i<26;i++)
 			{
-				if(j==1)
-				{
-					if(freq[i]==freq[i-1]+freq[i-3])
-						continue;
-				}
+		
 				if(freq[i]!=freq[i-1]+freq[i-2])
 				{
 					System.out.println("Not");

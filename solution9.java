@@ -1,4 +1,9 @@
+//ALGORITHM
 
+//1)take input
+//2)validate inputs
+//3)find the smallest element
+//4)multiply the smallest element by length-1
 
 import java.util.*;
 import java.lang.*;
@@ -16,6 +21,7 @@ class Solution9{
             long min = sc.nextInt();
 		    int l = length;
     		while ( length --> 1) {
+    		    //finding the min
     		    min = Math.min(min, sc.nextInt());
     		}
     		System.out.println(min * (l - 1));
